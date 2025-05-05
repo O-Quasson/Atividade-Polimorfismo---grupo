@@ -4,8 +4,8 @@ import java.util.Random;
 public class Main {
   public static void main(String[] args) {
 
-    public Scanner scanner = new Scanner(System.in);
-    public Matematica[] matematica = new Matematica[3];
+    Scanner scanner = new Scanner(System.in);
+    Matematica[] matematica = new Matematica[3];
     Random dandadan = new Random();
     String resposta;
 
@@ -18,8 +18,13 @@ public class Main {
 
     int random = dandadan.nextInt(2);
 
-    System.out.println(matematica.getquestao(random));
+    System.out.println(matematica[random].getquestao());
+    resposta = scanner.next();
+    matematica.exibirExplicacao(random);
+
+    scanner.close();
 
 };
 
-scanner.close();}
+
+}
