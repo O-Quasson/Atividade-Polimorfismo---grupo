@@ -41,12 +41,13 @@ public class Main {
         int random = dandadan.nextInt(3);
         String resposta;
         int esc = 1;
+        int anteriores[] = new int[2];
 
         // Instanciar as questões de forma polimórfica
         Materia[] materias = new Materia[9];
 
         // Matemática
-        materias[0] = new Matematica("Qual é a raiz quadrada de 16?", "4", "explicacao matematica 1");
+        materias[0] = new Matematica("Após o Fórum Nacional Contra a Pirataria (FNCP) incluir a linha de autopeças em campanha veiculada contra a falsificação, as agências fiscalizadoras divulgaram que os cinco principais produtos de autopeças falsificados são: rolamento, pastilha de freio, caixa de direção, catalisador e amortecedor. Após uma grande apreensão, as peças falsas foram cadastradas utilizando-se a codificação:\n\n1: rolamento, 2: pastilha de freio, 3: caixa de direção, 4: catalisador e 5: amortecedor.\n\nAo final obteve-se a sequência: 5, 4, 3, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 3, 4, 5, 4, 3, 2, 1, 2, 3, 4, ... que apresenta um padrão de formação que consiste na repetição de um bloco de números. Essa sequência descreve a ordem em que os produtos apreendidos foram cadastrados.\nO 2 015º item cadastrado foi um(a)\n\na) rolamento.\nb) catalisador.\nc) amortecedor.\nd) pastilha de freio\ne) caixa de direção.", "e", "explicacao matematica 1");
         materias[1] = new Matematica("Qual é o valor de Pi (aproximado)?", "3.14", "explicacao matematica 2");
         materias[2] = new Matematica("Quantos lados tem um hexágono?", "6", "explicacao matematica 3");
 
@@ -75,24 +76,80 @@ public class Main {
 
                 case 1:
                     random = dandadan.nextInt(3);
+                    anteriores[0] = random;
                     System.out.println(materias[random].getquestao());
-                    resposta = scanner.next();
+                    resposta = scanner.nextLine();
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while(anteriores[0]==random);
+                    anteriores[1] = random;
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while((anteriores[0]==random)||(anteriores[1]==random));
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
                     materias[random].exibirExplicacao(materias[random], resposta);
                     break;
 
                 case 2:
                     random = dandadan.nextInt(3);
+                    anteriores[0] = random;
                     random = random + 3;
                     System.out.println(materias[random].getquestao());
-                    resposta = scanner.next();
+                    resposta = scanner.nextLine();
+                    resposta = scanner.nextLine();
                     materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while(anteriores[0]==random);
+                    anteriores[1] = random;
+                    random = random + 3;
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while((anteriores[0]==random)||(anteriores[1]==random));
+                    random = random + 3;
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
                     break;
                 
                 case 3:
                     random = dandadan.nextInt(3);
+                    anteriores[0] = random;
                     random = random + 6;
                     System.out.println(materias[random].getquestao());
-                    resposta = scanner.next();
+                    resposta = scanner.nextLine();
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while(anteriores[0]==random);
+                    anteriores[1] = random;
+                    random = random + 6;
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
+                    materias[random].exibirExplicacao(materias[random], resposta);
+
+                    do{
+                        random = dandadan.nextInt(3);
+                    }while((anteriores[0]==random)||(anteriores[1]==random));
+                    random = random + 6;
+                    System.out.println(materias[random].getquestao());
+                    resposta = scanner.nextLine();
                     materias[random].exibirExplicacao(materias[random], resposta);
                     break;
 
