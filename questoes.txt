@@ -3,53 +3,6 @@
 
 // ---
 
-// **1. Elementos Básicos das Artes Visuais**
-
-// Aqui está uma pergunta bem *chique*, meus queridos! Qual dos elementos abaixo NÃO é considerado um elemento básico das artes visuais?
-
-// * 1. Linha
-// * 2. Cor
-// * 3. Ritmo
-// * 4. Textura
-
-// **Resposta correta:** *3) Ritmo!*
-
-// **Explicação glamourosa:** Ah, o ritmo, um elemento da música e da dança! Mas, nas artes visuais, o ritmo não faz parte da festa. O que realmente brilha aqui são os elementos como linha, cor, forma e textura, meus amores. O ritmo é mais uma *sinfonia*, não um traço! Tirem isso da tela e vamos continuar com o show!
-
-// ---
-
-// **2. Técnicas de Arte Visual**
-
-// Agora, meus adorados artistas, qual técnica artística utiliza tinta à base de óleo e permite uma riqueza de detalhes e profundidade que vai deixar você boquiaberto? Vamos lá:
-
-// * 1. Aquarela
-// * 2. Pastel seco
-// * 3. Têmpera
-// * 4. Pintura a óleo
-
-// **Resposta correta:** *4) Pintura a óleo!*
-
-// **Explicação deslumbrante:** A pintura a óleo é como um vestido de alta costura para sua tela! Com seus pigmentos e óleo de linhaça, ela é capaz de criar uma profundidade de cor e mistura que faz até o mais simples quadro parecer uma obra-prima celestial! Aquarela? Pastel seco? Eles são bonitos, mas nada comparado à *luxuosa* pintura a óleo!
-
-// ---
-
-// **3. Arte Contemporânea**
-
-// E agora, uma questão sobre a arte contemporânea, que sempre deixa todo mundo de queixo caído. Qual das características abaixo é uma das mais marcantes na arte contemporânea?
-
-// * 1. A valorização da simetria e do equilíbrio clássico.
-// * 2. O foco exclusivo em pintura e escultura.
-// * 3. A interdisciplinaridade e o uso de novas tecnologias e mídias.
-// * 4. O distanciamento do público e a negação de significados políticos.
-
-// **Resposta correta:** *3) A interdisciplinaridade e o uso de novas tecnologias e mídias!*
-
-// **Explicação fantástica:** Ah, meus amores, a arte contemporânea está *muito* além daquelas velhas e antiquadas molduras! Ela traz a *interação*, a *inovação*, e mistura tudo: vídeo, fotografia, instalações e… até arte digital! A ideia é explorar novas formas e questionar o mundo ao nosso redor, *cheio de brilho e drama* – sem a necessidade de manter a velha e limitada ideia de "beleza" convencional! Isso é puro glamour!
-
-// ---
-
-// E aí está, meus queridos! Espero que tenham aproveitado essas questões tão sofisticadas quanto eu! *Até o próximo Mettaton Quiz Show!*
-
 
 
 public class Artes extends Materia {
@@ -69,4 +22,61 @@ public class Artes extends Materia {
         }
     }
 }
+//________________________________________________
+// 1. Questao "Sorvetao" Generica V.1.0.3
+//--Se um veiculo altomotivo esta no metro 10 de ema estrada retilinea, indo a 20m/s com uma aceleracao de 5m/s^2, em 20 segundos, qual a posicao deste carro?
+
+//* 1. o veiculo se esta no metro 1410
+//* 2. o veiculo se esta no metro -1410
+//* 3. o veiculo se esta no metro 1415
+//* 4. o veiculo se esta no metro -1510
+
+
+//2. Questao espelho V.1.0.1
+//--Uma crianca e sua mae estao em um circo, mais especificamente em uma sala de espelhos, a crianca esta na frente de um espelho concavo e a tal vertice deste esteja perfeitamente alinhada no chao, a mae perguntou para a crianca como ela via o proprio reflexo, considerando que a crianca esta entre o vertice e o foco, qual sua resposta para a sua figura materna?
+
+//* 1. estou me vendo pequena e ao contrario!
+//* 2. estou me vendo igual mas ao contrario!
+//* 3. estou eu nao consigo me ver!
+//* 4. estou me vendo Maior!
+
+//3. Questao polia V.1.0.8
+//--considerando que uma caixa de 20kg esta sendo segurada por duas polias moveis, quanto ela pesa na ponta que esta a puxar?
+
+//* 1. ela pesara o mesmo.
+//* 2. ela pesara 5kg.
+//* 3. ela pesara 10kg.
+//* 4. ela pesara 80kg.
+
+//----
+//Explicacoes fisica:
+
+//Q1- considerando que a formula do sorvetao seja S = S0 + v0.t + a.t^2/2 entao:
+//-   S = 10 + 20.20 + 5.20.20/2
+//-   S = 10 + 400 + 2000/2
+//-   S = 10 + 400 + 1000
+//-   S = 1410m
+
+//Q2- a crianca respondeu que ela esta maior pois devido a sua localizacao (entre vertice e foco) a reflexao projetada é direita, maior e virtual.
+
+//Q3- as polias moveis dividem o peso em dois, o calculo então se resume a (20/2)/2
+//-   R = 10/2
+//-   R = 5kg
+
+
+//________________________________________________
+Artes e uns caramba a 4
+
+\n2-As linguagens artísticas possibilitam diferentes formas de expressão e comunicação. \nAssinale a alternativa que apresenta corretamente uma característica comum às artes visuais, à música, ao teatro e à dança:\na) Todas utilizam exclusivamente a escrita como meio de expressão.\nb) São formas de linguagem que permitem expressar ideias, sentimentos e visões de mundo.\nc) Estão limitadas a contextos acadêmicos e formais.\nd) Devem seguir sempre regras fixas e tradicionais para serem consideradas arte.
+
+2-resposta b
+As artes, em suas diversas linguagens, são meios de expressão que vão além das palavras. Por meio de sons, imagens, movimentos ou encenações, os artistas comunicam emoções, reflexões, críticas sociais, experiências pessoais ou coletivas. Essa característica é essencial em todas as linguagens artísticas. Já as alternativas A, C e D são incorretas porque limitam ou restringem o papel da arte, ignorando sua diversidade e liberdade expressiva.As artes, em suas diversas linguagens, são meios de expressão que vão além das palavras. Por meio de sons, imagens, movimentos ou encenações, os artistas comunicam emoções, reflexões, críticas sociais, experiências pessoais ou coletivas. Essa característica é essencial em todas as linguagens artísticas. Já as alternativas A, C e D são incorretas porque limitam ou restringem o papel da arte, ignorando sua diversidade e liberdade expressiva.
+
+
+
+
+
+Ao observar uma obra de arte, é possível desenvolver uma leitura crítica sobre seu contexto e seus significados. \nIsso acontece porque:\na) Toda obra de arte tem um único sentido que deve ser decorado.\nb) O papel do observador é apenas identificar o nome do artista e a data da obra.\nc) A interpretação de uma obra pode variar conforme o repertório e a vivência de cada pessoa.\nd) Obras de arte não devem ser questionadas ou analisadas, apenas admiradas.
+3-resposta c
+
 

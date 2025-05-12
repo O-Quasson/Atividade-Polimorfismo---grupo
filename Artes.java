@@ -1,9 +1,45 @@
 public class Artes extends Materia {
 
+    private String questao;
+    private String resp;
+    private String explicacao;
+
     public Artes(String questao, String resp, String explicacao){
-        super(questao, resp, explicacao);
+        this.questao=questao;
+        this.resp=resp;
+        this.explicacao=explicacao;
     };
 
+    @Override
+    public String getquestao(){
+        return questao;
+    };
+
+    @Override
+    public String getresp(){
+        return resp;
+    };
+
+    @Override
+    public String getexplicacao(){
+        return explicacao;
+    };
+
+    @Override
+    public void setexplicacao(String explicacao){
+        this.explicacao=explicacao;
+    };
+
+    @Override
+    public void setquestao(String questao){
+        this.questao = questao;
+    };
+
+    @Override
+    public void setrep(String resp){
+        this.resp = resp;
+    };
+    
     @Override
     public void exibirExplicacao(Materia materias, String resposta){
         if(resposta.equals(materias.getresp())){
@@ -12,23 +48,6 @@ public class Artes extends Materia {
             System.out.println("Errado! ");
         };
         System.out.println(materias.getexplicacao());
-        // if(random==0){
-        //     System.out.println("Explicacao");
-        // }else if(random==1){
-        //     System.out.println("Explicacao 2");
-        // }else if(random==2){
-        //     System.out.println("Explicacao 3");
-        // }
     };
 
-    // @Override
-    // public void exibirExplicacao(int random) {
-    //     if (random == 0) {
-    //         System.out.println("A unidade de medida da força no Sistema Internacional é o Newton (N).");
-    //     } else if (random == 1) {
-    //         System.out.println("Isaac Newton foi o responsável por formular a Lei da Gravitação Universal.");
-    //     } else if (random == 2) {
-    //         System.out.println("A velocidade da luz no vácuo é aproximadamente 299.792.458 m/s.");
-    //     }
-    // }
-}
+};

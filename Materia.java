@@ -3,35 +3,17 @@ public abstract class Materia {
     private String resp;
     private String explicacao;
 
-    public Materia(String questao, String resp, String explicacao){
-        this.questao=questao;
-        this.resp=resp;
-        this.explicacao=explicacao;
-    };
+    abstract String getquestao();
 
-    public String getquestao(){
-        return questao;
-    };
+    abstract String getresp();
 
-    public String getresp(){
-        return resp;
-    };
+    abstract String getexplicacao();
 
-    public String getexplicacao(){
-        return explicacao;
-    };
+    abstract void setexplicacao(String explicacao);
 
-    public void setexplicacao(String explicacao){
-        this.explicacao=explicacao;
-    };
+    abstract void setquestao(String questao);
 
-    public void setquestao(String questao){
-        this.questao = questao;
-    };
-
-    public void setrep(String resp){
-        this.resp = resp;
-    };
+    abstract void setrep(String resp);
 
     abstract void exibirExplicacao(Materia materias, String resposta);
-}
+};
