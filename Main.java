@@ -4,6 +4,7 @@ import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 import javax.sound.sampled.*;
+import java.lang.Thread;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
         System.out.println("Verificando diretório: " + basePath);
         File directory = new File(basePath);
 
-        // busca o wav
+        // busca o wav (porque essa bomba só lê wav)
         File audioFile = null;
         for (File file : Objects.requireNonNull(directory.listFiles())) {
             if (file.getName().toLowerCase().endsWith(".wav")) {
@@ -23,6 +24,33 @@ public class Main {
             };
         };
 
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("\n\nLights\n");
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Camera\n");
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("ACTION!\n\n");
+
+        try {
+            Thread.sleep(100);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        
         System.out.println("Música tema: " + audioFile.getName());
 
         // Controle de áudio
@@ -43,7 +71,7 @@ public class Main {
         int esc = 1;
         int anteriores[] = new int[2];
 
-        // Instanciar as questões de forma polimórfica
+        // Instanciar as questões com polimorfismo
         Materia[] materias = new Materia[9];
 
         // Matemática
