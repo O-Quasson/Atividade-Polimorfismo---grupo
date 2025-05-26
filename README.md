@@ -1,6 +1,4 @@
-Mudar o nome da pasta do arquivo para Grupo, senão a música não toca
-
-                                                                   
+                                                                
                           &xX$$$x++X&&&&                          
                         &x$&&&&&&&&&&&$XXX&                       
                        &X&&&&&&&&+$&&&&&&$X&                      
@@ -34,3 +32,5 @@ Mudar o nome da pasta do arquivo para Grupo, senão a música não toca
    &X$&&&&&&X+&+&                               &X&xX&&&&&&XX&    
  &$X&&&&&$$x&$X&                                 &X$&X$$&&&&&X$&  
  &&&&&&&&&                                             &&&&&&&&&  
+
+Mudar o nome da pasta do arquivo para Grupo, senão a música não toca
