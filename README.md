@@ -7,7 +7,7 @@ Preparem-se para um desfile de perguntas tão intensas quanto meus raios de lase
 Então, brilhem como estrelas, pensem rápido, e lembrem-se: só os mais fabulosos chegam até o final! 🎇
 Agora... *LET THE SHOW BEGIN!* 🎬
 
-#Como executar o quiz?
+**##Como executar o quiz?**
 
 Vá até a página principal do repositório no GitHub (ou da branch que você deseja baixar);
 
