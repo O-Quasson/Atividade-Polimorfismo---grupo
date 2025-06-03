@@ -25,16 +25,16 @@ O quiz tem 3 matérias: Matemática, Artes e Física.
 
 **##Como executar o quiz?**
 
-Vá até a página principal do repositório no GitHub (ou da branch que você deseja baixar);
+*Vá até a página principal do repositório no GitHub (ou da branch que você deseja baixar);
 
 
-Clique no botão Code;
+*Clique no botão Code;
 
 
-Selecione a opção Download ZIP;
+*Selecione a opção Download ZIP;
 
 
-Após terminar o download, extraia o arquivo no diretório Downloads;
+*Após terminar o download, extraia o arquivo no diretório Downloads;
 
 
-Caso você tenha baixado uma branch, será necessário mudar o nome da pasta para "Grupo" (exemplo de como deverá ser o caminho do diretório: C:\Users\USER\Downloads\Grupo);
+*Caso você tenha baixado uma branch, será necessário mudar o nome da pasta para "Grupo" (exemplo de como deverá ser o caminho do diretório: C:\Users\USER\Downloads\Grupo);
