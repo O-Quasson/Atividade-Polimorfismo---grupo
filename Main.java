@@ -94,7 +94,7 @@ public class Main {
         materias[2] = new Matematica("Em um colégio fabuloso com 100 alunos espetaculares, 80 deles se derretem por sorvete de chocolate, 70 deliram com o de creme, e 60 são tão gulosos que gostam dos dois sabores! Mas a verdadeira questão é... quantos desses pequenos humanos NÃO gostam de nenhum sorvete?!\n\nA) 0\nB) 10\nC) 20\nD) 30\nE) 40", "b");
 
         // Artes
-        materias[3] = new Artes("Dentre os elementos a seguir… qual deles NÃO é considerado um elemento BÁ-SI-CO das artes visuais?\n\na) Linha\nb) Cor\nc) Ritmo\nd) Textura", "c");
+        materias[3] = new Artes("Dentre os elementos a seguir, qual deles NÃO é considerado um elemento BÁ-SI-CO das artes visuais?\n\na) Linha\nb) Cor\nc) Ritmo\nd) Textura", "c");
         materias[4] = new Artes("As linguagens artísticas são tão diversas quanto meus circuitos de glamour~! Elas possibilitam formas fabulosas de expressão e comunicação! Mas me diga, querido humano... Qual das alternativas revela uma característica COMUM entre as artes visuais, a música, o teatro e a dança? Escolha com sabedoria — os refletores estão sobre você~!:\n\na) Todas utilizam exclusivamente a escrita como meio de expressão.\nb) São formas de linguagem que permitem expressar ideias, sentimentos e visões de mundo.\nc) Estão limitadas a contextos acadêmicos e formais.\nd) Devem seguir sempre regras fixas e tradicionais para serem consideradas arte.", "b");
         materias[5] = new Artes(" ME DIGA~: Por que, ao olhar uma obra de arte, você consegue fazer aquela leitura crítica cheia de estilo sobre o contexto e os significados escondidinhos?\n\na) Toda obra de arte tem um único sentido que deve ser decorado.\nb) O papel do observador é apenas identificar o nome do artista e a data da obra.\nc) A interpretação de uma obra pode variar conforme o repertório e a vivência de cada pessoa.\nd) Obras de arte não devem ser questionadas ou analisadas, apenas admiradas.", "c");
 
@@ -116,7 +116,7 @@ public class Main {
                 
                 case 0:
                 if(tentativa>=9){
-                    System.out.print("Good Ending\n\nOOOH YES~! Parabéns, humano fabulooooso! Você respondeu TODAS as questões do meu ultra magnífico quiz! Como recompensa… prepare-se… para um glorioso PARABÉNS e um tapinha absolutamente deslumbrante nas costas~!\n\n");
+                    System.out.print("Good Ending\n\nOOOH YES~! Parabéns, humano fabulooooso! Você respondeu TODAS as questões do meu ultra magnífico quiz! Como recompensa, prepare-se...para um glorioso PARABÉNS e um tapinha absolutamente deslumbrante nas costas~!\n\n");
                 }else{
                     //https://rootstack.com/en/blog/java-clear-screen
                     //limpa a tela para colocar o ascii
