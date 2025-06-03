@@ -2,12 +2,10 @@ public class Fisica extends Materia {
 
     private String questao;
     private String resp;
-    private String explicacao;
 
-    public Fisica(String questao, String resp, String explicacao){
+    public Fisica(String questao, String resp){
         this.questao=questao;
         this.resp=resp;
-        this.explicacao=explicacao;
     };
 
     @Override
@@ -21,16 +19,6 @@ public class Fisica extends Materia {
     };
 
     @Override
-    public String getexplicacao(){
-        return explicacao;
-    };
-
-    @Override
-    public void setexplicacao(String explicacao){
-        this.explicacao=explicacao;
-    };
-
-    @Override
     public void setquestao(String questao){
         this.questao = questao;
     };
@@ -41,12 +29,19 @@ public class Fisica extends Materia {
     };
     
     @Override
-    public void exibirExplicacao(Materia materias, String resposta){
+    public void exibirExplicacao(Materia materias, String resposta, int random){
         if(resposta.equals(materias.getresp())){
             System.out.println("Correto! ");
         }else{
             System.out.println("Errado! ");
         };
-        System.out.println(materias.getexplicacao());
+        
+        if(random==6){
+            System.out.println("Considerando que a formula do sorvetao seja S = S0 + v0.t + a.t^2/2 entao:\n S = 10 + 20.20 + 5.20.20/2\n S = 10 + 400 + 2000/2\n S = 10 + 400 + 1000\n S = 1410m\n\n");
+        }else if(random==7){
+            System.out.println("A crianca respondeu que ela estava maior pois devido a sua localizacao (entre vertice e foco) a reflexao projetada é direita, maior e virtual.\n\n");
+        }else if(random==8){
+            System.out.println("As polias moveis dividem o peso em dois, o calculo então se resume a (20/2)/2\nR = 10/2\nR = 5kg\n\n");
+        };
     };
 };
