@@ -7,6 +7,16 @@ Preparem-se para um desfile de perguntas tão intensas quanto meus raios de lase
 Então, brilhem como estrelas, pensem rápido, e lembrem-se: só os mais fabulosos chegam até o final! 🎇
 Agora... *LET THE SHOW BEGIN!* 🎬
 
+
+**##Quais os temas do quiz?**
+
+O quiz tem 3 matérias: Matemática, Artes e Física.
+
+* Na matéria de matemática, terá 3 perguntas com os seguintes temas: Combinatória, Teoria dos Conjuntos e Progressão Aritmética
+* Na matéria de artes, terá 3 perguntas sobre conhecimentos gerais das artes
+* Na matéria de física, terá 3 perguntas com os seguintes temas: Cálculo do movimento com aceleração (o famoso "sorvetão"), Formação de Imagem em Espelho Côncavo e Lei de Newton (gravidade e polia)
+
+
 **##Como executar o quiz?**
 
 Vá até a página principal do repositório no GitHub (ou da branch que você deseja baixar);
