@@ -7,7 +7,7 @@ Preparem-se para um desfile de perguntas tão intensas quanto meus raios de lase
 Então, brilhem como estrelas, pensem rápido, e lembrem-se: só os mais fabulosos chegam até o final! 🎇
 Agora... *LET THE SHOW BEGIN!* 🎬
 
-![tumblr_ny1xx1uPfL1r5qlrto1_400](https://github.com/user-attachments/assets/bd32b9c4-bcc2-4898-af8b-dc774109f613)
+![image](https://github.com/user-attachments/assets/91f7bd8b-49be-4717-9533-1e3d7168bb33)
 
 
 ---------
