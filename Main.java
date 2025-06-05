@@ -10,10 +10,18 @@ public class Main {
     public static void main(String[] args) {
 
         // Caminho do diretório, se mudar o codigo explode
-        String basePath = System.getProperty("user.home") + "\\Downloads\\Grupo\\dbg";
-        String basePath2 = System.getProperty("user.home") + "\\Downloads\\Grupo\\dbg2";
+        String basePath = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\musica";
+        String basePath2 = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\heart";
+        String basePath3 = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\levelup";
+        String basePath4 = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\light";
+        String basePath5 = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\camera";
+        String basePath6 = System.getProperty("user.home") + "\\Downloads\\Grupo\\audios\\action";
         File directory = new File(basePath);
         File directory2 = new File(basePath2);
+        File directory3 = new File(basePath3);
+        File directory4 = new File(basePath4);
+        File directory5 = new File(basePath5);
+        File directory6 = new File(basePath6);
 
         // busca o wav da música tema (porque essa bomba só lê wav)
         File audioFile = null;
@@ -33,13 +41,55 @@ public class Main {
             };
         };
 
+        //prepara o áudio do good ending (para mais tarde)
+        File audioFile3 = null;
+        for (File file : Objects.requireNonNull(directory3.listFiles())) {
+            if (file.getName().toLowerCase().endsWith(".wav")) {
+                audioFile3 = file;
+                break;
+            };
+        };
+
+        File audioFile4 = null;
+        for (File file : Objects.requireNonNull(directory4.listFiles())) {
+            if (file.getName().toLowerCase().endsWith(".wav")) {
+                audioFile4 = file;
+                break;
+            };
+        };
+
+        File audioFile5 = null;
+        for (File file : Objects.requireNonNull(directory5.listFiles())) {
+            if (file.getName().toLowerCase().endsWith(".wav")) {
+                audioFile5 = file;
+                break;
+            };
+        };
+
+        File audioFile6 = null;
+        for (File file : Objects.requireNonNull(directory6.listFiles())) {
+            if (file.getName().toLowerCase().endsWith(".wav")) {
+                audioFile6 = file;
+                break;
+            };
+        };
+
+
         //início do show
         try {
-            Thread.sleep(500);
+            Thread.sleep(250);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         System.out.println("\n\nLights\n");
+        Clip clip4 = null;
+        try (AudioInputStream audioStream4 = AudioSystem.getAudioInputStream(audioFile4)) {
+            clip4 = AudioSystem.getClip();
+            clip4.open(audioStream4);
+            clip4.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
 
         try {
             Thread.sleep(500);
@@ -47,6 +97,14 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println("Camera\n");
+        Clip clip5 = null;
+        try (AudioInputStream audioStream5 = AudioSystem.getAudioInputStream(audioFile5)) {
+            clip5 = AudioSystem.getClip();
+            clip5.open(audioStream5);
+            clip5.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
 
         try {
             Thread.sleep(500);
@@ -54,9 +112,17 @@ public class Main {
             e.printStackTrace();
         }
         System.out.println("ACTION!\n\n");
+        Clip clip6 = null;
+        try (AudioInputStream audioStream6 = AudioSystem.getAudioInputStream(audioFile6)) {
+            clip6 = AudioSystem.getClip();
+            clip6.open(audioStream6);
+            clip6.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
 
         try {
-            Thread.sleep(100);
+            Thread.sleep(500);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -116,7 +182,29 @@ public class Main {
                 
                 case 0:
                 if(tentativa>=9){
+                    //para a música tema para não causar interferência no som
+                    clip.stop();
+
+                    System.out.print("\033[H\033[2J");
+                    System.out.flush();
+
+                    Clip clip3 = null;
+                    try (AudioInputStream audioStream3 = AudioSystem.getAudioInputStream(audioFile3)) {
+                        clip3 = AudioSystem.getClip();
+                        clip3.open(audioStream3);
+                        clip3.loop(Clip.LOOP_CONTINUOUSLY);
+                    } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+                        e.printStackTrace();
+                    } 
+
                     System.out.print("Good Ending\n\nOOOH YES~! Parabéns, humano fabulooooso! Você respondeu TODAS as questões do meu ultra magnífico quiz! Como recompensa, prepare-se...para um glorioso PARABÉNS e um tapinha absolutamente deslumbrante nas costas~!\n\n");
+
+                    try {
+                        Thread.sleep(1100);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    };
+
                 }else{
                     //https://rootstack.com/en/blog/java-clear-screen
                     //limpa a tela para colocar o ascii
