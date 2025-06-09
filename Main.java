@@ -50,6 +50,7 @@ public class Main {
             };
         };
 
+        //light
         File audioFile4 = null;
         for (File file : Objects.requireNonNull(directory4.listFiles())) {
             if (file.getName().toLowerCase().endsWith(".wav")) {
@@ -58,6 +59,7 @@ public class Main {
             };
         };
 
+        //camera
         File audioFile5 = null;
         for (File file : Objects.requireNonNull(directory5.listFiles())) {
             if (file.getName().toLowerCase().endsWith(".wav")) {
@@ -66,6 +68,7 @@ public class Main {
             };
         };
 
+        //action!
         File audioFile6 = null;
         for (File file : Objects.requireNonNull(directory6.listFiles())) {
             if (file.getName().toLowerCase().endsWith(".wav")) {
